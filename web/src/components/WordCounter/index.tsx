@@ -19,7 +19,10 @@ const WordCounter: React.FC = () => {
         setError(null);
         setWordCount(null);
         try {
-            const response = await axios.post<WordCountDTO>('/api/count_words', { text } as TextDTO);
+            const response = await axios.post<WordCountDTO>(
+                '/api/count_words',
+                { text } as TextDTO,
+            );
             setWordCount(response.data.word_count);
         } catch (err) {
             if (axios.isAxiosError(err) && err.response) {

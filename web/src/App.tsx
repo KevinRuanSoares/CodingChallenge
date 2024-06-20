@@ -1,4 +1,5 @@
 import React from 'react';
+
 import WordCounter from './components/WordCounter';
 import './App.css';
 
