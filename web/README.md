@@ -1,4 +1,4 @@
-# Meu Projeto React
+# Code Challenge
 
 ## Pré-requisitos
 
