@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "CodeChallenge (DEV)",
+            "type": "python",
+            "request": "launch",
+            "module": "uvicorn",
+            "args": [
+                "--host",
+                "127.0.0.1",
+                "--port",
+                "8000",
+                "--reload",
+                "--log-level",
+                "debug",
+                "--app-dir",
+                "src",
+                "main:app"
+            ],
+            "jinja": true,
+            "justMyCode": true,
+            "python": "${workspaceFolder}/.venv/bin/python"
+        },    
+    ]
+}
