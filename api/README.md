@@ -1,6 +1,15 @@
 # Code Challenge
 
+## Pré-requisitos
+
+Antes de executar este projeto, certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
+
+- Python 3.12
+- Poetry
+
 ## Como começar?
+
+Realize a instalação das dependencias do projeto.
 
 ```sh
 poetry install
