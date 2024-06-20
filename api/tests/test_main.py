@@ -4,9 +4,8 @@ import sys
 import pytest
 from httpx import ASGITransport, AsyncClient
 
-from main import app
-
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../src/")))
+from main import app  # noqa: E402
 
 
 @pytest.mark.asyncio
