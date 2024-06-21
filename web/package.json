@@ -26,7 +26,6 @@
     "lint:fix": "eslint 'src/**/*.{js,jsx,ts,tsx}' --fix",
     "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,md}'"
   },
-  "proxy": "https://api.codechallenge.kevinsoares.com.br",
   "eslintConfig": {
     "extends": [
       "react-app",
