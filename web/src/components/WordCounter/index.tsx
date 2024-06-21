@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+
+import axiosInstance from '../../api';
 import './style.css';
 
 interface TextDTO {
@@ -19,7 +21,7 @@ const WordCounter: React.FC = () => {
         setError(null);
         setWordCount(null);
         try {
-            const response = await axios.post<WordCountDTO>(
+            const response = await axiosInstance.post<WordCountDTO>(
                 '/api/count_words',
                 { text } as TextDTO,
             );
