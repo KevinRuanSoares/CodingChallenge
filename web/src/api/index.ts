@@ -10,10 +10,7 @@ const stage = {
 };
 
 const axiosInstance = axios.create({
-    baseURL:
-        process.env.STAGE === 'production'
-            ? stage.production.baseURL
-            : stage.development.baseURL,
+    baseURL: stage.production.baseURL,
     headers: {
         'Content-Type': 'application/json',
     },
