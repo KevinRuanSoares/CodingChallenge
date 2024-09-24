@@ -13,6 +13,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      STAGE: production
 
     steps:
       - name: Checkout code
