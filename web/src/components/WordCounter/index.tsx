@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import { isAxiosError } from 'axios';
 
 import axiosInstance from '../../api';
 import './style.css';
@@ -27,7 +27,7 @@ const WordCounter: React.FC = () => {
             );
             setWordCount(response.data.word_count);
         } catch (err) {
-            if (axios.isAxiosError(err) && err.response) {
+            if (isAxiosError(err) && err.response) {
                 setError(err.response.data.detail);
             } else {
                 setError('An unexpected error occurred');
