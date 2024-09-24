@@ -3,6 +3,7 @@ import { isAxiosError } from 'axios';
 
 import axiosInstance from '../../api';
 import './style.css';
+import packageJson from '../../../package.json';
 
 interface TextDTO {
     text: string;
@@ -37,7 +38,7 @@ const WordCounter: React.FC = () => {
 
     return (
         <div className="word-counter-container">
-            <h1>Word Counter</h1>
+            <h1>Word Counter v{packageJson.version}</h1>
             <textarea
                 value={text}
                 onChange={(e) => setText(e.target.value)}
