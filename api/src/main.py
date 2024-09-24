@@ -11,7 +11,7 @@ from word_counter import word_counter_router
 app = FastAPI(
     title="Word Counter API",
     description="A simple API that counts the number of words in a text.",
-    version="1.0.0",
+    version="1.0.1",
     contact={
         "name": "Kevin Ruan Soares",
         "url": "https://github.com/KevinRuanSoares",
